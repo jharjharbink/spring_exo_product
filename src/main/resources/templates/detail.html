@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Détail</title>
+</head>
+<body>
+
+<h1>Détail du Produit</h1>
+<p>UUID : <span th:text="${product.getId()}"></span></p>
+<p>Nom : <span th:text="${product.getName()}"></span></p>
+<p>Cat : <span th:text="${product.getCategory()}"></span></p>
+<p>Prix : <span th:text="${product.getPrice()}"></span></p>
+<hr>
+<a th:href="@{/list}">Afficher tous les produits</a>
+
+</body>
+</html>
